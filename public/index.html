@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NEK Interactive Weather & News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+    
+
+  <h1 class="text-3xl font-bold underline">
+    NEK Interactive Weather & News
+  </h1>
+
+    <div class="google-search">
+        <h2>Google Search</h2>
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" placeholder="Enter search term">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    
+
+
+
+  
+
+  <div class="centered-content">
+    <!-- Your weather elements here -->
+
+            <h2>Get Weather by Zip Code</h2>
+            <input type="text" id="zipcode" placeholder="Zip Code">
+            <button id="zipButton" class="px-6 py-2 text-sm font-semibold text-blue-600 border border-purple-200 rounded-full hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+                Get Weather
+            </button>
+       
+    <div class="box-content">
+        <img id="weather-icon" src="" class="box-image" alt="Weather Icon">  
+            <div class="box-content">
+                <h5 class="box-title" id="weather-title">Current Weather</h5>
+                <p class="box-text" id="weather-details"></p>
+            </div>
+    </div>
+    <div class="container"</div>
+    
+      <div class="grid grid-cols-2 gap-4">
+      
+        <div class="grid-item">
+            <div id="daily-forecast">
+      </div>
+      <div class="flex-container"> <!-- Flex container -->
+        <div class="centered-content"> <!-- Flex item -->     
+            <h2 class="text-3xl font-bold underline">
+                NY Times RSS 
+            </h2>
+            <button id="rssButton">Load RSS Feed</button>
+            <div id="nytimes-feed"></div>
+            <img id= "NYT-logo" src="NYTlogo.png" alt="Data provided by The New York Times">
+        </div>
+    </div>
+    
+        
+    
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* Style for the page */
+
+
+body {
+    font-family: sans-serif;
+    background-attachment: fixed;
+    background-image: url('home.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0
+}
+.parent-container {
+    text-align: center;
+}
+.centered-title {
+    text-align: center; /* Center the title text */
+    font-size: 4rem; /* Increase the font size, adjust as needed */
+    margin: 10px 0; /* Add some margin for spacing, adjust as needed */
+}
+
+
+h1 {
+    color: blue;
+}
+h2 {
+    color: blue;
+}
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.google-search {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.google-search input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.google-search button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.google-search button:hover {
+    background-color: #45a049;
+}
+
+/* Apply this class to a container that wraps your weather elements */
+
+.box-content {
+    /* Adjust the padding, margin, or size */
+    padding: 40px;
+    /* Other styling as needed */
+}
+
+.box-image {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.box-title {
+    font-size: 40px; /* Adjust as needed */
+    /* Other styling as needed */
+}
+
+.box-text {
+    font-size: 20px; /* Adjust as needed */
+    /* Other styling as needed */
+}
+
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.forecast-item {
+    
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #66CCFF;
+    text-align: center;
+}
+
+    
+#daily-forecast {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background-color: #3300CC;
+}
+
+img.weather-icon {
+    width: 20px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+
+/* Style for the New York Times RSS feed */
+.flex-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Arrange items in a column */
+    padding: 100px; /* Add some padding around */
+}
+#nytimes-feed ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#nytimes-feed li {
+    background-color: #f0f0f0; /* Light grey background for each item */
+    margin-bottom: 10px; /* Add some space between items */
+    padding: 10px; /* Add some padding inside each item */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+#nytimes-feed a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333333; /* Dark text color for better readability */
+    font-weight: bold; /* Make the text bold */
+}
+
+#nytimes-feed a:hover {
+    color: #007bff; /* Change color on hover for interactivity */
+}
+
+
