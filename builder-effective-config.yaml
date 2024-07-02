@@ -1,0 +1,11 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.sparkdevstudios.nekweather
+productName: NEK Weather
+linux:
+  target:
+    - AppImage
+    - deb
+files: []
+electronVersion: 31.1.0

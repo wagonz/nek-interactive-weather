@@ -1,24 +1,25 @@
 {
-  "name": "nek-weather",
+  "name": "nekweather-desktop",
   "version": "1.0.0",
-  "description": "",
-  "app": "server.js",
+  "description": "Desktop application for NEK Weather",
+  "homepage": "https://nekweather.sparkdevstudios.org",
+  "main": "main.js",
   "scripts": {
-    "start":"node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron . --no-sandbox",
+    "build": "electron-builder --linux"
   },
   "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "@headlessui/react": "^1.7.18",
-    "@heroicons/react": "^2.1.1",
-    "axios": "^1.6.7",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "rss-parser": "^3.13.0"
-  },
+  "author": "Wascar J. Gonzalez <wascarg@sparkdevstudios.org>",
+  "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
+    "electron": "^31.1.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.sparkdevstudios.nekweather",
+    "productName": "NEK Weather",
+    "linux": {
+      "target": ["AppImage", "deb"]
+    }
   }
 }
